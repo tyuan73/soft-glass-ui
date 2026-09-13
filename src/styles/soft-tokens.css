@@ -1,0 +1,172 @@
+:root {
+  /* Classic Soft Theme (Matches the uploaded mockup) */
+  --soft-bg: #e2e8f0;
+  --soft-surface: #e2e8f0;
+  --soft-text: #2d3748;
+  --soft-text-muted: #718096;
+  --soft-text-subtle: #a0aec0;
+  --soft-primary: #4d7cfe;
+  --soft-primary-hover: #3b6bef;
+  --soft-primary-glow: rgba(77, 124, 254, 0.35);
+  --soft-success: #10b981;
+  --soft-danger: #ef4444;
+  --soft-btn-accent-text: #1e293b; /* Dark contrast text in light mode, never white */
+
+  /* Shadow Physics: Light coming from Top-Left (-135deg) */
+  --shadow-light: rgba(255, 255, 255, 0.9);
+  --shadow-dark: rgba(163, 177, 198, 0.6);
+  --shadow-inset-light: rgba(255, 255, 255, 0.85);
+  --shadow-inset-dark: rgba(163, 177, 198, 0.65);
+
+  /* Shadows */
+  --soft-shadow-xs: 2px 2px 5px var(--shadow-dark), -2px -2px 5px var(--shadow-light);
+  --soft-shadow-sm: 4px 4px 8px var(--shadow-dark), -4px -4px 8px var(--shadow-light);
+  --soft-shadow-md: 7px 7px 14px var(--shadow-dark), -7px -7px 14px var(--shadow-light);
+  --soft-shadow-lg: 12px 12px 24px var(--shadow-dark), -12px -12px 24px var(--shadow-light);
+  --soft-shadow-xl: 18px 18px 36px var(--shadow-dark), -18px -18px 36px var(--shadow-light);
+
+  /* Inset / Pressed Shadows */
+  --soft-shadow-inset-xs:
+    inset 2px 2px 4px var(--shadow-inset-dark), inset -2px -2px 4px var(--shadow-inset-light);
+  --soft-shadow-inset-sm:
+    inset 3px 3px 6px var(--shadow-inset-dark), inset -3px -3px 6px var(--shadow-inset-light);
+  --soft-shadow-inset-md:
+    inset 5px 5px 10px var(--shadow-inset-dark), inset -5px -5px 10px var(--shadow-inset-light);
+  --soft-shadow-inset-lg:
+    inset 8px 8px 16px var(--shadow-inset-dark), inset -8px -8px 16px var(--shadow-inset-light);
+
+  /* Convex / Concave Gradients */
+  --soft-gradient-convex: linear-gradient(145deg, #f2f8ff, #d6dce4);
+  --soft-gradient-concave: linear-gradient(145deg, #d6dce4, #f2f8ff);
+  --soft-gradient-flat: none;
+
+  /* Border Radius */
+  --soft-radius-sm: 10px;
+  --soft-radius-md: 16px;
+  --soft-radius-lg: 24px;
+  --soft-radius-xl: 32px;
+  --soft-radius-pill: 9999px;
+}
+
+[data-theme='dark'],
+.theme-dark,
+.dark {
+  --soft-bg: #1c1f26;
+  --soft-surface: #1c1f26;
+  --soft-text: #e2e8f0;
+  --soft-text-muted: #94a3b8;
+  --soft-text-subtle: #64748b;
+  --soft-primary: #5e8cf6;
+  --soft-primary-hover: #4d7cfe;
+  --soft-primary-glow: rgba(94, 140, 246, 0.4);
+  --soft-btn-accent-text: #ffffff; /* White text ONLY in Dark Slate theme */
+
+  --shadow-light: rgba(43, 49, 61, 0.7);
+  --shadow-dark: rgba(13, 15, 19, 0.9);
+  --shadow-inset-light: rgba(43, 49, 61, 0.6);
+  --shadow-inset-dark: rgba(13, 15, 19, 0.95);
+
+  --soft-gradient-convex: linear-gradient(145deg, #22262f, #181b21);
+  --soft-gradient-concave: linear-gradient(145deg, #181b21, #22262f);
+}
+
+[data-theme='warm'],
+.theme-warm {
+  --soft-bg: #eae5dc;
+  --soft-surface: #eae5dc;
+  --soft-text: #3d3730;
+  --soft-text-muted: #857c70;
+  --soft-text-subtle: #b3a99b;
+  --soft-primary: #e07a5f;
+  --soft-primary-hover: #cb684e;
+  --soft-primary-glow: rgba(224, 122, 95, 0.35);
+  --soft-btn-accent-text: #2d241e; /* Dark contrast text */
+
+  --shadow-light: rgba(255, 255, 255, 0.9);
+  --shadow-dark: rgba(188, 178, 163, 0.6);
+  --shadow-inset-light: rgba(255, 255, 255, 0.85);
+  --shadow-inset-dark: rgba(188, 178, 163, 0.65);
+
+  --soft-gradient-convex: linear-gradient(145deg, #faf5ec, #ded9d1);
+  --soft-gradient-concave: linear-gradient(145deg, #ded9d1, #faf5ec);
+}
+
+[data-theme='lavender'],
+.theme-lavender {
+  --soft-bg: #e6e8f4;
+  --soft-surface: #e6e8f4;
+  --soft-text: #2f334a;
+  --soft-text-muted: #797e9e;
+  --soft-text-subtle: #a6abc7;
+  --soft-primary: #7c5cff;
+  --soft-primary-hover: #6a47f4;
+  --soft-primary-glow: rgba(124, 92, 255, 0.35);
+  --soft-btn-accent-text: #1e1b2e; /* Dark contrast text */
+
+  --shadow-light: rgba(255, 255, 255, 0.92);
+  --shadow-dark: rgba(175, 179, 204, 0.6);
+  --shadow-inset-light: rgba(255, 255, 255, 0.85);
+  --shadow-inset-dark: rgba(175, 179, 204, 0.65);
+
+  --soft-gradient-convex: linear-gradient(145deg, #f6f8ff, #dcdff0);
+  --soft-gradient-concave: linear-gradient(145deg, #dcdff0, #f6f8ff);
+}
+
+/* Base Soft Utility Classes */
+.soft-bg {
+  background-color: var(--soft-bg);
+}
+
+.soft-surface {
+  background-color: var(--soft-surface);
+}
+
+.soft-raised-xs {
+  box-shadow: var(--soft-shadow-xs);
+}
+
+.soft-raised-sm {
+  box-shadow: var(--soft-shadow-sm);
+}
+
+.soft-raised-md {
+  box-shadow: var(--soft-shadow-md);
+}
+
+.soft-raised-lg {
+  box-shadow: var(--soft-shadow-lg);
+}
+
+.soft-raised-xl {
+  box-shadow: var(--soft-shadow-xl);
+}
+
+.soft-pressed-xs {
+  box-shadow: var(--soft-shadow-inset-xs);
+}
+
+.soft-pressed-sm {
+  box-shadow: var(--soft-shadow-inset-sm);
+}
+
+.soft-pressed-md {
+  box-shadow: var(--soft-shadow-inset-md);
+}
+
+.soft-pressed-lg {
+  box-shadow: var(--soft-shadow-inset-lg);
+}
+
+.soft-convex {
+  background: var(--soft-gradient-convex);
+  box-shadow: var(--soft-shadow-md);
+}
+
+.soft-concave {
+  background: var(--soft-gradient-concave);
+  box-shadow: var(--soft-shadow-md);
+}
+
+.soft-transition {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}

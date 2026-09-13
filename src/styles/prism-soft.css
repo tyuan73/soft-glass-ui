@@ -1,0 +1,151 @@
+/* Classic Soft Neumorphic Syntax Highlighting Theme */
+
+code[class*='language-'],
+pre[class*='language-'] {
+  color: var(--soft-text);
+  background: none;
+  font-family:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  tab-size: 2;
+  hyphens: none;
+}
+
+/* Tokens */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--soft-text-subtle);
+  font-style: italic;
+  opacity: 0.8;
+}
+
+.token.punctuation {
+  color: var(--soft-text-muted);
+  opacity: 0.85;
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: #e11d48; /* soft rose */
+  font-weight: 500;
+}
+
+.token.boolean,
+.token.number {
+  color: #f59e0b; /* soft amber */
+  font-weight: 600;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: #10b981; /* soft emerald */
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+  color: #6366f1; /* soft indigo */
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: var(--soft-primary); /* classic primary blue */
+  font-weight: 600;
+}
+
+.token.function,
+.token.class-name {
+  color: #8b5cf6; /* soft violet */
+  font-weight: 600;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+  color: #ec4899; /* soft pink */
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+/* Dark theme specific adjustments */
+.dark code[class*='language-'],
+.dark pre[class*='language-'] {
+  color: #f1f5f9;
+}
+
+.dark .token.property,
+.dark .token.tag,
+.dark .token.constant,
+.dark .token.symbol {
+  color: #fb7185;
+}
+
+.dark .token.string,
+.dark .token.char,
+.dark .token.attr-name {
+  color: #34d399;
+}
+
+.dark .token.function,
+.dark .token.class-name {
+  color: #a78bfa;
+}
+
+.dark .token.keyword {
+  color: #60a5fa;
+}
+
+.dark .token.number,
+.dark .token.boolean {
+  color: #fbbf24;
+}
+
+.dark .token.operator {
+  color: #818cf8;
+}
+
+/* KaTeX math styling */
+.katex {
+  color: inherit;
+}
+
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.5rem 0;
+  margin: 1.25rem 0;
+}
