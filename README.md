@@ -4,12 +4,14 @@ A modern, tactile **Neumorphic & Soft Glass React component system** engineered 
 
 Built with **React 19**, **TypeScript**, **Tailwind CSS v4**, and **Vite**.
 
+![Soft Glass UI - Buttons & Tactile Form Controls](docs/screenshots/buttons-and-forms.jpg)
+
 ---
 
 ## ✨ Features
 
 - 🌟 **Physically-Modeled Shadows**: Specular highlights combined with ambient absorption vectors calculated from a top-left light source ($\theta = -135^\circ$).
-- 🎛️ **Tactile Tactility**: Real-world tactile feedback with smooth transitions between elevated surfaces (`raised`) and depressed wells (`pressed`).
+- 🎛️ **Tactile Feedback**: Smooth, realistic transitions between elevated surfaces (`raised`) and debossed wells (`pressed`).
 - 🎨 **Multi-Tone Themes**:
   - **Classic Soft** (Clean Slate Gray)
   - **Dark Slate** (High-contrast deep neumorphism)
@@ -18,6 +20,28 @@ Built with **React 19**, **TypeScript**, **Tailwind CSS v4**, and **Vite**.
 - 📐 **25+ Production-Ready Components**: Complete component suite covering layouts, form controls, rich media viewers, and interactive widgets.
 - 🧮 **Rich Markdown & LaTeX**: Built-in `SoftMarkdownViewer` with KaTeX equation rendering, Prism syntax highlighting, and responsive table support.
 - ⚡ **Modern Stack**: Powered by React 19, Tailwind CSS v4, Vite 8, and Oxlint for sub-millisecond linting and high-performance builds.
+
+---
+
+## 📸 Visual Showcase
+
+### 1. Tactile Buttons & Sunken Form Controls
+
+Embossed primary buttons, soft chromatic surface tints, solid glowing accents, pastel clay surfaces, sunken debossed search & text inputs, password visibility toggles, and numeric steppers.
+
+![Buttons and Form Controls](docs/screenshots/buttons-and-forms.jpg)
+
+### 2. Markdown Viewer with LaTeX Equations & Code Highlighting
+
+Integrated `SoftMarkdownViewer` rendering mathematical models with KaTeX, CommonMark formatting, responsive tables, and PrismJS syntax-highlighted code blocks with one-click copy.
+
+![Markdown Viewer and LaTeX Equations](docs/screenshots/markdown-and-latex.jpg)
+
+### 3. Typography Scale & Progress Bars
+
+Heading hierarchy (h1–h6), body, caption, and small typography variants, combinable formatting modifiers (bold, italic, strikethrough, underline highlights), 9-step font weight scale, and sunken debossed animated progress bars.
+
+![Typography and Progress Bars](docs/screenshots/typography-and-progress.jpg)
 
 ---
 
@@ -249,6 +273,8 @@ Set the `data-theme` attribute on the root or container element:
 
 ```
 soft-glass-ui/
+├── docs/
+│   └── screenshots/        # Visual documentation showcases
 ├── public/                 # Static assets (favicons, SVG icons)
 ├── src/
 │   ├── components/         # Component implementations
